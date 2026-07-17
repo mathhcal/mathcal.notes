@@ -20,11 +20,15 @@
             --mono: 'JetBrains Mono', monospace;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html {
+            background: var(--deep-navy);
+        }
         body {
             background: radial-gradient(ellipse at center, #0f1a2b 0%, #080c1a 100%);
             color: var(--ice-blue);
             font-family: var(--body);
             overflow-x: hidden;
+            overscroll-behavior-y: none;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -212,7 +216,7 @@
         </div>
     </div>
 
-    <script>
+    <script>
         (function() {
             const canvas = document.getElementById('stars-canvas');
             const ctx = canvas.getContext('2d');
